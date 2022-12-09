@@ -1,0 +1,73 @@
+################################
+#         Menu warpow          #
+################################
+
+#Nazwa menu
+menu-title: "&6warpy"
+#Ilosc slotow w menu
+#WAŻNE - > Licbz musi byc podzielna przez 9
+#Np. 9, 18, 27 itd -> max = 54
+slots: 54
+
+################################
+#            FRAME             #
+################################
+
+frame:
+  enable: true
+  name: "frame"
+  item: "black_stained_glass_pane"
+  slot-numbers: [0,1,2,3,4,5,6,7,8,9,17,26,35,18,27, 36,45, 46, 47, 48,49,50,51,52,44,53]
+  display-name: " "
+
+################################
+#                              #
+#      TUTORIAL USTAWIANIA     #
+#           WARPÓW             #
+#                              #
+#  Numeracja zaczyna się od 0  #
+#                              #
+#                              #
+#    012345678 <-- nr slota    #
+#    ######### <-- wyglad GUI  #
+#                              #
+################################
+#
+# PRZYKLAD
+#
+# warp-list: <-- tej nazwy nie zmieniamy
+#  spawn-warp: <-- nazwa warpa(nie moze sie powtarzac)
+#    name: <-- nazwa warpa z Essentialsa
+#    slot-number <-- nr slota w menu
+#    item: <-- nazwa itemu np grass_block, cobblestone, spone itd
+#    display-name: <-- nazwa itemku wyswietlana w menu
+#    lore: <-- Lore itemku, by dodac kolejna linijke, po prostu kliknij enter i dodaj kolejna po '-'
+#    A w celu usuniecia linijki, po prostu ja usun
+#
+################################
+#            WARPY             #
+################################
+
+warp-list:
+  spawn-warp:
+    name: "spawn"
+    slot-number: 20
+    item: "grass_block"
+    display-name: "&b/warp spawn"
+    lore:
+      - "&7Przenosi na teren spawnu"
+      - "&7Status: &awlaczony"
+      - ""
+      - "&8=================="
+      - "&bKliknij aby sie przeteleportowac"
+  event-warp:
+    name: "event"
+    slot-number: 21
+    item: "sponge"
+    display-name: "&b/warp event"
+    lore:
+      - "&7Przenosi na teren eventu"
+      - "&7Status: &4wylaczony"
+      - ""
+      - "&8=================="
+      - "&bKliknij aby sie przeteleportowac"

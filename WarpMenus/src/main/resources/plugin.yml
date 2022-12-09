@@ -1,0 +1,21 @@
+name: WarpMenusReku
+version: '${project.version}'
+main: me.rekuseq.warpmenusreku.WarpMenusReku
+api-version: 1.19
+authors: [ Rekuseq ]
+description: warpy w gui
+
+
+
+commands:
+  warplist:
+    description: Wydaje liste z warpami
+    aliases: [warps, wp]
+
+permissions:
+  warplist.*:
+    default: false
+    children:
+      warplist.warplistcommand: true
+  warplist.warplistcommand:
+    default: true
